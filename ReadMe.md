@@ -5,8 +5,6 @@ Response example:<br />
 {"statusType":"OK","entity":[],"entityType":"java.util.ArrayList","status":200,"metadata":{}}<br />
 {"statusType":"OK","entity":{"fileId":1,"userId":"tester","fileName":"demo.txt","path":"C:\\Users\\Jie\\git\\demo\\rest-demo\\uploaded\\demo.txt1496547429039","uploadTime":"2017-06-03 22:37:09"},"entityType":"org.linda.restdemo.entity.FileMetadata","status":200,"metadata":{}}<br />
 
- Uploaded files can be found in folder "uploaded".<br />
-
 We can test if file being uploaded successfully by searching file by file id:<br />
 http://localhost:8080/file/query?fileId=1<br />
 Response example:<br />
