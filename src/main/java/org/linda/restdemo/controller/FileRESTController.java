@@ -33,7 +33,7 @@ public class FileRESTController {
 		metaData.setUserId(userId);
 		metaData.setFileName(file.getOriginalFilename());
 		String newFileName = file.getOriginalFilename() + System.currentTimeMillis();
-		metaData.setPath(projectPath + fileSeparator + "uploaded" + fileSeparator + newFileName);
+		metaData.setPath(projectPath + fileSeparator + newFileName);
 		logger.info("uploading file: " + metaData);
 		FileMetadata data = fileService.saveFile(file, metaData);
 		return Response.status(200).entity(data).build();
